@@ -219,17 +219,17 @@ span{
 }
 @keyframes words{
     0%, 33%{
-        content: "Student";
+        content: "UBC Student";
     }
     34%, 67%{
-        content: "Software Developer";
+        content: "Beginner Software Developer";
     }
     68%, 100%{
         content: "Web Developer";
     }
 }
 
-.experience, .education{
+.experience, .education, .about-me{
     padding: 7rem 9% 5rem;
     background-color: white;
 }
@@ -242,7 +242,7 @@ span{
     font-weight: 700;
 }
 
-.experience-content, .education-content{
+.experience-content, .education-content, .about-me-paragraph{
     max-width: 800px;
     margin: 0 auto;
     margin-bottom: rem;
