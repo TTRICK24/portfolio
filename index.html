@@ -13,24 +13,83 @@
             <a href="index.html" class = "active"> Home</a>
             <a href="experience.html"> Experience</a>
             <a href="education.html">Education</a>
-            <a href="about.html">About Me</a>
 
         </nav>
     </header>
-    <section class = "home">
+    <section id = "home" class = "home">
         <div class="home-img">
             <img src="placeholder.jpg" alt="">
         </div>
         <div class="home-content">
             <h1><span>Rick Wen</span></h1>
-            <h3 class="typing-text">I'm a <span></span></h3>
+            <h3 class="typing-text">I am <span></span></h3>
             <p></p>
 
-            <a href="#" class="btn">Contact me</a>
+            <div class="dropdown">
+                <button class="btn" id="contact-toggle">Contact me</button>
+                <div class="dropdown-menu" id="contact-menu">
+                    <a href="https://www.linkedin.com/in/rick-wen-41913927b/" target="_blank">LinkedIn</a>
+                    <div class="email">
+                        <span>Email</span>
+                        <div class="dropdown-content">
+                                <p>rickwen24@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
+    <section id ="about-me" class="about-me">
+        <h2>About me</h2>
+        <p class = "about-me-paragraph"> Hello, I'm Rick, an aspiring UBC student hoping to one day become a talented developer. I am currently learning all I can about web development, but I would love to dip my skillpool and experience in other fields of tech.
+            Outside of school, I enjoy playing volleyball, indulging myself in fashion, and working out. </p>
+    
+    </section>
 
+    <section id = "experience" class="experience" id="experience">
+        <link rel="stylesheet" href="style.css">
+      <h2>Experience</h2>
+      <div class="experience-content">
+        <div class="experience-item">
+          <h3>Job Title</h3>
+          <h4>Company Name</h4>
+          <p class="date">2025 - Present</p>
+          <p>role and achievements</p>
+        </div>
+      </div>
+    </section>
+
+    <section id = "education" class="education" id="education">
+        <link rel="stylesheet" href="style.css">
+    
+        <h2>Education</h2>
+        <div class="education-content">
+            <div class="education-item">
+                <h3>School name</h3>
+                <h4>Major name</h4>
+                <p class="date"> 2023 - Present</p>
+                <p>brief description</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const toggleBtn = document.getElementById('contact-toggle');
+        const dropdown = document.getElementById('contact-menu');
+
+    toggleBtn.addEventListener('click', () => {
+        dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    });
+
+  
+    document.addEventListener('click', (e) => {
+        if (!document.querySelector('.dropdown').contains(e.target)) {
+        dropdown.style.display = 'none';
+        }
+        });
+    </script>
 
 
 

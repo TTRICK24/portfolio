@@ -5,7 +5,7 @@
     text-decoration: none;
     border: none;
     outline: none;
-    font-family: "";
+    font-family:Haettenschweiler, 'Inter', sans-serif;
 }
 
 html{
@@ -13,7 +13,8 @@ html{
 }
 
 .home-img img{
-    width: 700px;
+    margin-top: 2rem;
+    width: 600px;
     height: auto;
 }
 
@@ -24,20 +25,22 @@ body{
     color:black;
 }
 
-header{
-    margin-top: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1rem 9%;
-    background-color: transparent;
-    filter: drop-shadow(10px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  padding: 2rem 9%;
+  background-color: rgb(75, 173, 136);
+  filter: drop-shadow(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+
 }
+
 
 .logo{
     font-size: 3rem;
@@ -62,8 +65,9 @@ nav a{
 
 nav a:hover,
 nav a.active{
-    color: rgb(75 173 136);
-    border-bottom: 3px solid rgb(75 173 136);
+    color: white;
+    border-bottom: 2px solid white;
+
 }
 
 @media(max-width:900px){
@@ -96,22 +100,22 @@ nav.active{
 
 
 nav a:hover,
-nav a.active{
-    padding: 1rem;
-    border-radius: 0.5rem;
-    border-bottom: 0.5rem solid rgb(75 173 136);
+nav a.active {
+  padding: 0.5rem;
+  border-bottom: 0.75rem solid white;
 }
 
 section{
-    min-height: 100vh;
-    padding: rem 9% 5rem;
+    padding: 7rem 9% 5rem;
+
 }
 
 .home{
+    padding: 7rem 9% 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 7rem   ;
+    gap: 5rem   ;
     background-color: white;
 
 }
@@ -182,8 +186,8 @@ span{
     font-size: 34px;
     font-weight: 600;
     min-width: 280px;
-    width: 500px; /* Add this - adjust value as needed */
-    text-align: left; /* Optional: align text to left */
+    width: 800px;
+    text-align: left; 
 }
 
 .typing-text span{
@@ -218,34 +222,45 @@ span{
     }
 }
 @keyframes words{
-    0%, 33%{
-        content: "UBC Student";
+    0%, 50%{
+        content: "a UBC Student";
     }
-    34%, 67%{
-        content: "Beginner Software Developer";
+    51%, 100%{
+        content: "an Aspiring Developer";
     }
-    68%, 100%{
-        content: "Web Developer";
-    }
+
 }
 
-.experience, .education, .about-me{
+.experience, .education {
     padding: 7rem 9% 5rem;
     background-color: white;
+    margin-top: 8rem;
+    height: 800px;
 }
 
-.experience h2, .education h2, .about-me{
+.about-me{
+    padding:7rem  9% 5rem;
+    margin-top: 3rem;
+}
+
+.experience h2, .education h2{
     font-size: 3rem;
     color: rgb(75 173 136);
-    text-align: center;
     margin-bottom: rem;
     font-weight: 700;
 }
 
-.experience-content, .education-content, .about-me-paragraph{
-    max-width: 800px;
-    margin: 0 auto;
+.about-me{
+    margin-top: 0;
     margin-bottom: rem;
+    font-weight: 700;
+    font-size: 3rem;
+    color: rgb(75 173 136);
+}
+
+.experience-content, .education-content{
+    max-width: 800px;
+    margin-bottom: 1rem;
 }
 
 .experience-item, .education-item{
@@ -263,13 +278,57 @@ span{
     font-size: large;
 }
 
-.about-me-paragraph{
+
+.about-me-paragraph {
+    color: black;
     font-size: 2rem;
-    padding:3rem;
-width:fit-content;
-margin: 0 auto;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    max-width: 800px;
+    line-height: 1.6;
+
+
 
 }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 1rem;
+  z-index: 200;
+  min-width: 150px;
+}
+
+.email{
+    font-size: 1.4rem;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: black;
+  text-decoration: none;
+  font-size: 2rem;
+  border-radius: 0.3rem;
+}
+
+.dropdown-menu a:hover {
+  background-color: rgb(75, 173, 136);
+  color: white;
+}
+
 
 
 
