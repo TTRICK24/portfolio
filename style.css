@@ -5,7 +5,8 @@
     text-decoration: none;
     border: none;
     outline: none;
-    font-family:Haettenschweiler, 'Inter', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+
 }
 
 html{
@@ -21,8 +22,8 @@ html{
 body{
     width: 100%;
     overflow-x: hidden;
-    background-color: white;
-    color:black;
+    background-color: rgb(23, 23, 23);
+    color:white;
 }
 
 header {
@@ -116,7 +117,7 @@ section{
     justify-content: center;
     align-items: center;
     gap: 5rem   ;
-    background-color: white;
+    background-color: rgb(23, 23, 23);
 
 }
 
@@ -144,7 +145,7 @@ span{
 
 .home-img img{
     position: relative;
-    width: 32vw;
+    width: 24vw;
     border-radius: 50%;
     box-shadow: 0 0 25px solid rgb(75 173 136);
     cursor: pointer;
@@ -161,13 +162,14 @@ span{
 .btn{
     display: inline-block;
     padding: 1rem 2.8rem;
-    background-color: white;
+    background-color: rgb(23, 23, 23);
     border-radius: 4rem;
     font-size: 1.6rem;
-    color: black;
+    margin: 2rem;
+    color: white;
     letter-spacing: 0.3rem;
     font-weight: 600;
-    border: 2px solid black;
+    border: 2px solid white;
     transition: 0.3s ease;
     cursor: pointer;
 
@@ -204,11 +206,11 @@ span{
 
 .typing-text span::after{
     content: "";
-    background-color: white;
+    background-color: rgb(23, 23, 23);
     position: absolute;
     width: calc(100% + 8px);
     height: 100%;
-    border-left: 3px solid white;
+    border-left: 3px solid rgb(23,23,23);
     right: -8;
     animation: cursor 0.6s infinite;
 
@@ -233,7 +235,7 @@ span{
 
 .experience, .education {
     padding: 7rem 9% 5rem;
-    background-color: white;
+    background-color: rgb(23,23,23);
     margin-top: 8rem;
     height: 800px;
 }
@@ -263,24 +265,64 @@ span{
     margin-bottom: 1rem;
 }
 
-.experience-item, .education-item{
-    background-color: white;
+.experience-item {
+    display: block;
+    background-color: rgb(23, 23, 23);
+    margin: 2rem;
+    padding: 2rem;
+    border: 1px solid(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px white;
+    color: white;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 
-    padding: 3rem;
 
 }
+
+.education-item{
+
+    background-color: rgb(23, 23, 23);
+    margin: 2rem;
+    padding: 2rem;
+    border: 1px solid(0, 0, 0, 0.1);
+    border-radius: 1rem;
+
+    color: white;
+}
+
+.experience-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgb(75, 173, 136);
+}
+
+
+
+.experience-item h3,
+.experience-item h4,
+.experience-item p {
+  margin-bottom: 0.5rem;
+}
+
 
 .experience-item p, h3, h4{
     font-size: large;
 }
 
-.education-item p, h3, h4{
+.education-item h3,
+.education-item h4,
+.education-item p {
+    margin-bottom: 0.5rem;
+}
+
+.education-item p, h3, h4 {
     font-size: large;
 }
 
 
+
+
 .about-me-paragraph {
-    color: black;
+    color: white;
     font-size: 2rem;
     font-weight: 300;
     padding: 0;
@@ -309,6 +351,10 @@ span{
   padding: 1rem;
   z-index: 200;
   min-width: 150px;
+}
+
+.dropdown-content {
+    color:rgb(75, 173, 136);
 }
 
 .email{
