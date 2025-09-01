@@ -269,7 +269,7 @@ span{
     display: block;
     background-color: rgb(23, 23, 23);
     margin: 2rem;
-    padding: 2rem;
+    padding: 3rem;
     border: 1px solid(0, 0, 0, 0.1);
     border-radius: 1rem;
     box-shadow: 0 4px 12px white;
@@ -284,10 +284,12 @@ span{
     background-color: rgb(23, 23, 23);
     margin: 2rem;
     padding: 2rem;
-    border: 1px solid(0, 0, 0, 0.1);
+    border: 1px solid rgb(75, 173, 136);
     border-radius: 1rem;
-
+    font-size: 2rem;
+    line-height: 1.8;
     color: white;
+    font-weight: 100;
 }
 
 .experience-item:hover {
@@ -304,19 +306,34 @@ span{
 }
 
 
-.experience-item p, h3, h4{
+.experience-item p, h4{
     font-size: large;
 }
 
-.education-item h3,
+.experience-item h3{
+    color: rgb(75, 173, 136);
+    font-size: large;
+}
+
+.date{
+    color: white;
+    font-size: large;
+    font-weight: 700;
+}
+
+.education-item h3{
+    font-size: 3rem;
+    color: white;
+    margin-bottom: rem;
+    font-weight: 700;
+
+}
+
 .education-item h4,
 .education-item p {
     margin-bottom: 0.5rem;
 }
 
-.education-item p, h3, h4 {
-    font-size: large;
-}
 
 
 
